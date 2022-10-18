@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { AlumnosUtl } from '../interfaces/utl.interface';
-import { UtlService } from '../service/utl.service';
+//import { UtlService } from '../service/utl.service';
 
 
 @Component({
@@ -10,15 +10,12 @@ import { UtlService } from '../service/utl.service';
 })
 export class MainPageComponent{
 
-
-
-
 regAlum:AlumnosUtl={
   nombre:'',
   edad:0
 }
 
-constructor(private UtlService:UtlService) {}
+constructor() {}
 
 
 
