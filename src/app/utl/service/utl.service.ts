@@ -22,7 +22,7 @@ export class UtlService {
   ]
 
 get alumnosUtl():AlumnosUtl[]{
-  return [...this.alumnosUtl]; // con los ... se desestructura un objeto
+  return [...this._alumnosUtl]; // con los ... se desestructura un objeto
 }
 
   constructor() { }

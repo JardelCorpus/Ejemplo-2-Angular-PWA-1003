@@ -1,9 +1,11 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { MainPageComponent } from './main-page/main-page.component';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { AlumnosComponent } from './alumnos/alumnos.component';
-import { AgregarComponent } from './agregar/agregar.component'
+import { AgregarComponent } from './agregar/agregar.component';
+import { UsuariosComponent } from './usuarios/usuarios.component'
+import { MaterialModule } from '../material/material.module';
 
 
 
@@ -11,14 +13,18 @@ import { AgregarComponent } from './agregar/agregar.component'
   declarations: [
     MainPageComponent,
     AlumnosComponent,
-    AgregarComponent
+    AgregarComponent,
+    UsuariosComponent
   ],
   exports:[
-    MainPageComponent
+    MainPageComponent,
+    UsuariosComponent
   ],
   imports: [
     CommonModule,
-    FormsModule
+    FormsModule,
+    MaterialModule,
+    ReactiveFormsModule
   ]
 })
 export class UtlModule { }

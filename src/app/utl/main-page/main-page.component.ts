@@ -17,8 +17,6 @@ regAlum:AlumnosUtl={
 
 constructor() {}
 
-
-
 }
   
 
